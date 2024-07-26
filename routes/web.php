@@ -19,3 +19,6 @@ Route::get('/', function () {
 });
 
 Route::get('/posts', [PostController::class, 'index']);
+
+// {id}を指定された際のルーティング
+Route::get('/posts/{id}', [PostController::class, 'show']);
